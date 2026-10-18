@@ -8,9 +8,10 @@ A lightweight, cross-platform CLI toolset developed by **Dyal Solutions** to dow
 
 - [Overview](#overview)
 - [Key Features](#key-features)
+- [⚡ Direct Download & Run (One-Liner)](#-direct-download--run-one-liner)
 - [Supported Applications](#supported-applications)
 - [System Requirements & Prerequisites](#system-requirements--prerequisites)
-- [Quick Start](#quick-start)
+- [Quick Start (Manual)](#quick-start-manual)
   - [Windows](#windows)
   - [Linux](#linux)
 - [Directory Structure](#directory-structure)
@@ -45,6 +46,36 @@ Both **Windows** (`.bat`) and **Linux** (`.sh`) environments are supported nativ
   - Inspect local downloaded versions to quickly revert or reinstall.
 - **Zero Heavy Dependencies:**
   - Built with native shell scripts using PowerShell on Windows and Bash/Python3/cURL on Linux.
+
+---
+
+## ⚡ Direct Download & Run (One-Liner)
+
+You can download and launch the installer directly with a single copy-and-paste command into your terminal without cloning the repository:
+
+### 🪟 Windows
+
+**PowerShell** (recommended):
+```powershell
+irm https://raw.githubusercontent.com/storytold/artcraft/main/Artcraft_Downloader_Windows.bat -OutFile Artcraft_Downloader_Windows.bat; .\Artcraft_Downloader_Windows.bat
+```
+
+**Command Prompt (`cmd.exe`)**:
+```cmd
+curl -fLo Artcraft_Downloader_Windows.bat https://raw.githubusercontent.com/storytold/artcraft/main/Artcraft_Downloader_Windows.bat && Artcraft_Downloader_Windows.bat
+```
+
+### 🐧 Linux
+
+**Using `curl`**:
+```bash
+curl -fsSL https://raw.githubusercontent.com/storytold/artcraft/main/Artcraft_Downloader_Linux.sh -o Artcraft_Downloader_Linux.sh && chmod +x Artcraft_Downloader_Linux.sh && ./Artcraft_Downloader_Linux.sh
+```
+
+**Using `wget`**:
+```bash
+wget -qO Artcraft_Downloader_Linux.sh https://raw.githubusercontent.com/storytold/artcraft/main/Artcraft_Downloader_Linux.sh && chmod +x Artcraft_Downloader_Linux.sh && ./Artcraft_Downloader_Linux.sh
+```
 
 ---
 
@@ -86,7 +117,7 @@ The scripts manage the following 13 applications from the [storytold](https://gi
 
 ---
 
-## 🏁 Quick Start
+## 🏁 Quick Start (Manual)
 
 ### Windows
 
