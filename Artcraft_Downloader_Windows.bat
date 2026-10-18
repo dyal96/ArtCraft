@@ -254,14 +254,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "    Write-Host ('[*] Downloading to ' + '%target_folder%\' + $asset.name + '...');" ^
     "    $ProgressPreference = 'SilentlyContinue';" ^
     "    Invoke-WebRequest -Uri $asset.browser_download_url -OutFile ('%target_folder%\' + $asset.name);" ^
-    "    Write-Host '[OK] Download Complete!';" ^
+    "    Write-Host '[OK] Download Complete.';" ^
     "    if ($type -eq 'Portable' -and ($asset.name -like '*.zip')) {" ^
     "      Write-Host ('[*] Unzipping portable archive to: ' + '%target_folder%');" ^
     "      try {" ^
     "        Expand-Archive -LiteralPath ('%target_folder%\' + $asset.name) -DestinationPath '%target_folder%' -Force;" ^
-    "        Write-Host '[OK] Extraction Complete! Portable application is ready to use.';" ^
+    "        Write-Host '[OK] Extraction Complete. Portable application is ready to use.';" ^
     "      } catch {" ^
-    "        Write-Host ('[!] Extraction notice: ' + $_.Exception.Message);" ^
+    "        Write-Host ('[NOTICE] Extraction notice: ' + $_.Exception.Message);" ^
     "      }" ^
     "    }" ^
     "  } else {" ^
@@ -381,14 +381,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
     "    Write-Host ('[*] Downloading to ' + '%target_folder%\' + $asset.name + '...');" ^
     "    $ProgressPreference = 'SilentlyContinue';" ^
     "    Invoke-WebRequest -Uri $asset.browser_download_url -OutFile ('%target_folder%\' + $asset.name);" ^
-    "    Write-Host '[OK] Download Complete!';" ^
+    "    Write-Host '[OK] Download Complete.';" ^
     "    if ($type -eq 'Portable' -and ($asset.name -like '*.zip')) {" ^
     "      Write-Host ('[*] Unzipping portable archive to: ' + '%target_folder%');" ^
     "      try {" ^
     "        Expand-Archive -LiteralPath ('%target_folder%\' + $asset.name) -DestinationPath '%target_folder%' -Force;" ^
-    "        Write-Host '[OK] Extraction Complete! Portable application is ready to use.';" ^
+    "        Write-Host '[OK] Extraction Complete. Portable application is ready to use.';" ^
     "      } catch {" ^
-    "        Write-Host ('[!] Extraction notice: ' + $_.Exception.Message);" ^
+    "        Write-Host ('[NOTICE] Extraction notice: ' + $_.Exception.Message);" ^
     "      }" ^
     "    }" ^
     "  } else {" ^
