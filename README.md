@@ -57,24 +57,24 @@ You can download and launch the installer directly with a single copy-and-paste 
 
 **PowerShell** (recommended):
 ```powershell
-irm https://raw.githubusercontent.com/storytold/artcraft/main/Artcraft_Downloader_Windows.bat -OutFile Artcraft_Downloader_Windows.bat; .\Artcraft_Downloader_Windows.bat
+irm https://raw.githubusercontent.com/dyal96/Artcraft-Apps-Downloader/main/Artcraft_Downloader_Windows.bat -OutFile Artcraft_Downloader_Windows.bat; .\Artcraft_Downloader_Windows.bat
 ```
 
 **Command Prompt (`cmd.exe`)**:
 ```cmd
-curl -fLo Artcraft_Downloader_Windows.bat https://raw.githubusercontent.com/storytold/artcraft/main/Artcraft_Downloader_Windows.bat && Artcraft_Downloader_Windows.bat
+curl -fLo Artcraft_Downloader_Windows.bat https://raw.githubusercontent.com/dyal96/Artcraft-Apps-Downloader/main/Artcraft_Downloader_Windows.bat && Artcraft_Downloader_Windows.bat
 ```
 
 ### 🐧 Linux
 
 **Using `curl`**:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/storytold/artcraft/main/Artcraft_Downloader_Linux.sh -o Artcraft_Downloader_Linux.sh && chmod +x Artcraft_Downloader_Linux.sh && ./Artcraft_Downloader_Linux.sh
+curl -fsSL https://raw.githubusercontent.com/dyal96/Artcraft-Apps-Downloader/main/Artcraft_Downloader_Linux.sh -o Artcraft_Downloader_Linux.sh && chmod +x Artcraft_Downloader_Linux.sh && ./Artcraft_Downloader_Linux.sh
 ```
 
 **Using `wget`**:
 ```bash
-wget -qO Artcraft_Downloader_Linux.sh https://raw.githubusercontent.com/storytold/artcraft/main/Artcraft_Downloader_Linux.sh && chmod +x Artcraft_Downloader_Linux.sh && ./Artcraft_Downloader_Linux.sh
+wget -qO Artcraft_Downloader_Linux.sh https://raw.githubusercontent.com/dyal96/Artcraft-Apps-Downloader/main/Artcraft_Downloader_Linux.sh && chmod +x Artcraft_Downloader_Linux.sh && ./Artcraft_Downloader_Linux.sh
 ```
 
 ---
@@ -210,5 +210,6 @@ If an update causes issues or you need a legacy release:
 
 ## 👨‍💻 Credits
 
-- **Developer:** Dyal Solutions
-- **Repository Host:** [storytold](https://github.com/storytold)
+- **Developer:** Dyal Solutions ([@dyal96](https://github.com/dyal96))
+- **Installer Repository:** [dyal96/Artcraft-Apps-Downloader](https://github.com/dyal96/Artcraft-Apps-Downloader)
+- **Application Binaries Host:** [storytold](https://github.com/storytold)
